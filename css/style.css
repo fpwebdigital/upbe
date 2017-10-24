@@ -46,8 +46,73 @@ h1, h3, h4, h5, h6 {
   font-family: "Raleway", "Source Sans Pro", Arial, sans-serif;
   font-weight: 400; }
 
+#tarja-news{
+  background-color: #f2f2f2;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  margin-top: 20px;
+}
+
 h2 {
   font-family: 'Amatic SC'; }
+
+.preto{
+  color: #000000;
+  font-weight: bold;
+}
+
+.verde{
+  color: #8bb463;
+  font-weight: bold;
+}
+
+#tarja-vert-verde{
+  background-color: #8bb463;
+  width: 13px;
+  height: 300px;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+}
+
+#tarja-vert-rosa{
+  background-color: #ed4990;
+  width: 13px;
+  height: 378px;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+}
+
+#tarja-vert-azul{
+  background-color: #3d349f;
+  width: 13px;
+  height: 447px;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+}
+
+.rosa{
+  color: #ed4990;
+  font-weight: bold;
+}
+
+.txt-peq{
+  font-size: 14px;
+}
+
+.azul{
+  color: #3d349f;
+  font-weight: bold;
+}
+.vermelho{
+  color: #df0031;
+  font-weight: bold;
+}
+
 
 h3 {
   font-size: 20px !important; }
@@ -421,7 +486,7 @@ h3 {
       background: rgba(255, 255, 255, 0.8);
       position: absolute;
       width: 100%;
-      height: 100%;
+      height: 90%;
       opacity: 0;
       transition: all ease 0.5s;
       -webkit-transition: all ease 0.5s;

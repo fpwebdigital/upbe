@@ -63,12 +63,7 @@
 				</div>
 		        <div id="navbar" class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav navbar-right">
-					<li>
-						<audio id="yourAudio" preload='none'>
-							<source src="./music/upbe.mp3" type='audio/mpeg' />
-						</audio>
-						<a href="#" id="audioControl"><i class="icon-volume-off icone-menu"></i></a>
-					</li>
+
 		            <li><a href="#" data-nav-section="conceito"><span>Conceito</span></a></li>
 		            <li><a href="#" data-nav-section="consultoria"><span>Consultoria Integrada</span></a></li>
 		            <li><a href="#" data-nav-section="plataformas"><span>Aplicativo</span></a></li>
@@ -81,8 +76,7 @@
 					<li>
 						<a class="dropdown-toggle" data-toggle="dropdown"><i class="icon-lock icone-menu" style=""></i></a>
 						<ul class="dropdown-menu">
-							<li><a href="#" style="color: #000">Já é upbe?</a></li>
-							<li class="divider"></li>
+							<li class="login-topo">Já é upbe?</li>
 						  	<li><a href="http://trainingymapp.com/webtouch/" style="color: #000">Sim</a></li>
 						  	<li><a href="#" data-nav-section="contato" style="color: #000">Não</a></li>
 						</ul>
@@ -200,6 +194,7 @@
                             </div>
                         </div>
                         <img src="images/integrada-verde.jpg" class="img-responsive" alt="">
+						<p style="text-align: center"><a href="consultoria.html.html" class="btn btn-primary">Saiba Mais</a></p>
                     </a>
 
                 </div>
@@ -214,6 +209,7 @@
                             </div>
                         </div>
                         <img src="images/integrada-rosa.jpg" class="img-responsive" alt="">
+						<p style="text-align: center"><a href="consultoria.html.html" class="btn btn-primary">Saiba Mais</a></p>
                     </a>
 
                 </div>
@@ -228,6 +224,7 @@
 							</div>
                         </div>
                         <img src="images/integrada-azul.jpg" class="img-responsive" alt="">
+						<p style="text-align: center"><a href="consultoria.html.html" class="btn btn-primary">Saiba Mais</a></p>
                     </a>
                 </div>
 
@@ -566,13 +563,20 @@
 				</div>
 			</div>
 			<div class="row">
+				<div id="musica">
+					<audio id="yourAudio" preload='none'>
+						<source src="./music/upbe.mp3" type='audio/mpeg' />
+					</audio>
+					<a href="#" id="audioControl"><img src="images/som-off.jpg" class="img-responsive"></a>
+				</div>
+
 				<div class="col-md-12 text-center">
-					<ul class="social social-circle">
-						<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<ul class="social social-circle esp-rodape">
+
+
 						<li><a href="#"><i class="icon-facebook"></i></a></li>
-						<li><a href="#"><i class="icon-youtube"></i></a></li>
 						<li><a href="#"><i class="icon-instagram"></i></a></li>
-						<li><a href="#"><i class="icon-lock"></i></a></li>
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -587,8 +591,8 @@
 		ctrl.onclick = function () {
 
 			// Update the Button
-			var pause = ctrl.innerHTML === '<i class="icon-volume"></i>';
-			ctrl.innerHTML = pause ? '<i class="icon-volume-off"></i>' : '<i class="icon-volume"></i>';
+			var pause = ctrl.innerHTML === '<img src="images/som-on.jpg" class="img-responsive">';
+			ctrl.innerHTML = pause ? '<img src="images/som-off.jpg" class="img-responsive">' : '<img src="images/som-on.jpg" class="img-responsive">';
 
 			// Update the Audio
 			var method = pause ? 'pause' : 'play';

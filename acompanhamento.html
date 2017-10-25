@@ -74,7 +74,14 @@
 					<li><a href="#"><i class="icon-facebook icone-menu"></i></a></li>
 					<li><a href="#"><i class="icon-instagram icone-menu"></i></a></li>
 					<li><a href="#"><i class="icon-twitter icone-menu"></i></a></li>
-					<li><a href="#"><i class="icon-lock icone-menu"></i></a></li>
+						<li>
+							<a class="dropdown-toggle" data-toggle="dropdown"><i class="icon-lock icone-menu" style=""></i></a>
+							<ul class="dropdown-menu">
+								<li class="login-topo">Já é upbe?</li>
+								<li><a href="http://trainingymapp.com/webtouch/" style="color: #000">Sim</a></li>
+								<li><a href="#" data-nav-section="contato" style="color: #000">Não</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 				</nav>
@@ -168,30 +175,56 @@
 			</div>
 		</div>
     </section>
-	
-	<footer id="footer" role="contentinfo">
+
+	<footer id="footer" role="contentinfo" style="width:100%; margin:0 auto; background:url(images/upbe.png) no-repeat;  background-size: contain; background-position: right;">
 		<div class="container">
 			<div class="row row-bottom-padded-sm">
 				<div class="col-md-12">
-					<p class="copyright text-center">&copy; 2017 <a href="index.html">upbe</a>. Todos os direitos reservados. </p>
+					<p class="copyright text-center">&copy; 2017 <a href="index.html"><b>upbe</b></a>. Todos os direitos reservados. </p>
 				</div>
 			</div>
 			<div class="row">
+				<div id="musica">
+					<audio id="yourAudio" preload='none'>
+						<source src="./music/upbe.mp3" type='audio/mpeg' />
+					</audio>
+					<a href="#" id="audioControl"><img src="images/som-off.jpg" class="img-responsive"></a>
+				</div>
+
 				<div class="col-md-12 text-center">
-					<ul class="social social-circle">
-						<!--<li><a href="#"><i class="icon-twitter"></i></a></li>-->
+					<ul class="social social-circle esp-rodape">
+
+
 						<li><a href="#"><i class="icon-facebook"></i></a></li>
-						<li><a href="#"><i class="icon-youtube"></i></a></li>
-						<!--<li><a href="#"><i class="icon-pinterest"></i></a></li>
-						<li><a href="#"><i class="icon-linkedin"></i></a></li>-->
 						<li><a href="#"><i class="icon-instagram"></i></a></li>
-						<!--<li><a href="#"><i class="icon-dribbble"></i></a></li>-->
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</footer>
-	
+
+	<script>
+
+        var yourAudio = document.getElementById('yourAudio'),
+            ctrl = document.getElementById('audioControl');
+
+        ctrl.onclick = function () {
+
+            // Update the Button
+            var pause = ctrl.innerHTML === '<img src="images/som-on.jpg" class="img-responsive">';
+            ctrl.innerHTML = pause ? '<img src="images/som-off.jpg" class="img-responsive">' : '<img src="images/som-on.jpg" class="img-responsive">';
+
+            // Update the Audio
+            var method = pause ? 'pause' : 'play';
+            yourAudio[method]();
+
+            // Prevent Default Action
+            return false;
+        };
+
+	</script>
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->

@@ -19,6 +19,7 @@
 
 		var owl = $('.owl-carousel');
         var owlcalendario = $('.owl-carousel-calendario');
+        var owlapp = $('.owl-carousel-app');
 
 		owl.on('initialized.owl.carousel change.owl.carousel',function(elem){
 			var current = elem.item.index;
@@ -60,6 +61,26 @@
             items: 3,
             // loop: true,
             loop:($(".owl-carousel-calendario").length > 1) ? true: false,
+            margin: 0,
+            responsiveClass: true,
+            nav: true,
+            dots: false,
+            autoHeight: true,
+            smartSpeed: 2000,
+            slideSpeed: 400,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: false,
+            navText: [
+                "<i class='icon-arrow-left2 owl-direction'></i>",
+                "<i class='icon-arrow-right2 owl-direction'></i>"
+            ]
+        });
+
+        owlapp.owlCarousel({
+            items: 1,
+            // loop: true,
+            loop:($(".owl-carousel-app").length > 1) ? true: false,
             margin: 0,
             responsiveClass: true,
             nav: true,

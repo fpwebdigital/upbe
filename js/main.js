@@ -16,14 +16,15 @@
 
 	// Carousel Feature Slide
 	var owlCrouselFeatureSlide = function() {
-		
+
 		var owl = $('.owl-carousel');
+        var owlcalendario = $('.owl-carousel-calendario');
 
 		owl.on('initialized.owl.carousel change.owl.carousel',function(elem){
 			var current = elem.item.index;
 			$(elem.target).find(".owl-item").eq(current).find(".to-animate").removeClass('fadeInUp animated');
 			$(elem.target).find(".owl-item").eq(current).find(".to-animate-2").removeClass('fadeInUp animated');
-		
+
 		});
 		owl.on('initialized.owl.carousel changed.owl.carousel',function(elem){
 			setTimeout(function(){
@@ -42,18 +43,38 @@
 		    margin: 0,
 			responsiveClass: true,
 			nav: true,
-		    dots: true,
+		    dots: false,
 		    autoHeight: true,
 			smartSpeed: 2000,
 			slideSpeed: 400,
 		    autoplay: true,
 			autoplayTimeout: 3000,
-			autoplayHoverPause: true,
-		    navText: [	
+			autoplayHoverPause: false,
+		    navText: [
 		      "<i class='icon-arrow-left2 owl-direction'></i>",
 		      "<i class='icon-arrow-right2 owl-direction'></i>"
 	     	]
 		});
+
+        owlcalendario.owlCarousel({
+            items: 3,
+            // loop: true,
+            loop:($(".owl-carousel-calendario").length > 1) ? true: false,
+            margin: 0,
+            responsiveClass: true,
+            nav: true,
+            dots: false,
+            autoHeight: true,
+            smartSpeed: 2000,
+            slideSpeed: 400,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: false,
+            navText: [
+                "<i class='icon-arrow-left2 owl-direction'></i>",
+                "<i class='icon-arrow-right2 owl-direction'></i>"
+            ]
+        });
 
 	};
 

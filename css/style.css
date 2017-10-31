@@ -33,12 +33,12 @@ body {
 }
 
 a {
-  color: #E4002B;
+  color: #df0031;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   a:hover, a:active, a:focus {
-    color: #E4002B;
+    color: #df0031;
     outline: none; }
 
 p {
@@ -60,6 +60,12 @@ h1, h3, h4, h5, h6 {
 
 h2 {
   font-family: 'Amatic SC';
+}
+
+#espaco {
+  width: 100%;
+  height: 40px;
+  position: relative;
 }
 
 .login-topo {
@@ -175,6 +181,7 @@ h2 {
 }
 .branco{
   color: #ffffff;
+  margin-top: 10px !important;
 }
 
 .vermelho{
@@ -223,9 +230,22 @@ h3 {
   background: #df0031;
   color: #ffffff;
   border: 1px solid #df0031 !important;
+  border-radius: inherit;
 }
 
 .btn.btn-upbered:hover, .btn.btn-upbered:active, .btn.btn-upbered:focus {
+  background: #7f7f7f;
+}
+
+.btn.btn-upbered2 {
+  background: #df0031;
+  color: #ffffff;
+  border: 1px solid #df0031 !important;
+  border-radius: 0px;
+  width: inherit;100%
+}
+
+.btn.btn-upbered2:hover, .btn.btn-upbered2:active, .btn.btn-upbered2:focus {
   background: #7f7f7f;
 }
 
@@ -244,7 +264,7 @@ h3 {
     color: #7f7f7f;
     border: 1px solid #d9d9d9 !important; }
     .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
-      background: #E4002B; }
+      background: #df0031; }
 
 
   .btn:hover, .btn:active, .btn:focus {
@@ -281,20 +301,20 @@ h3 {
       -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
       box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1); }
       #upbe-header .navbar-brand {
-        color: #E4002B !important; }
+        color: #df0031 !important; }
       #upbe-header #navbar li a {
         color: rgba(0, 0, 0, 0.5) !important;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
         #upbe-header #navbar li a:hover {
-          color: #E4002B !important; }
+          color: #df0031 !important; }
         #upbe-header #navbar li a span:before {
           background: transparent !important; }
       #upbe-header #navbar li.active a {
         background: transparent;
         background: none;
-        color: #E4002B !important; }
+        color: #df0031 !important; }
         #upbe-header #navbar li.active a span:before {
           visibility: visible;
           -webkit-transform: scaleX(1);
@@ -322,7 +342,7 @@ h3 {
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #E4002B;
+        background-color: #df0031;
         visibility: hidden;
         -webkit-transform: scaleX(0);
         -moz-transform: scaleX(0);
@@ -368,18 +388,18 @@ h3 {
     margin-top: 0px;
     top: 0; }
     #upbe-header.navbar-fixed-top .navbar-brand {
-      color: #E4002B; }
+      color: #df0031; }
     #upbe-header.navbar-fixed-top #navbar li a {
       color: rgba(0, 0, 0, 0.7);
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s; }
       #upbe-header.navbar-fixed-top #navbar li a:hover {
-        color: #E4002B; }
+        color: #df0031; }
     #upbe-header.navbar-fixed-top #navbar li.active a {
       background: transparent;
       background: none;
-      color: #E4002B; }
+      color: #df0031; }
       #upbe-header.navbar-fixed-top #navbar li.active a span:before {
         visibility: visible;
         -webkit-transform: scaleX(1);
@@ -402,7 +422,7 @@ h3 {
       letter-spacing: 2px;
       color: #adadad; }
       #upbe-header .navbar-default .brand-slogan em {
-        color: #E4002B;
+        color: #df0031;
         font-style: normal; }
   #upbe-header a {
     -webkit-transition: 0s;
@@ -420,7 +440,7 @@ h3 {
   cursor: pointer;
   text-decoration: none; }
   .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
-    background: #E4002B; }
+    background: #df0031; }
   .fh5co-nav-toggle:hover, .fh5co-nav-toggle:focus, .fh5co-nav-toggle:active {
     outline: none;
     border-bottom: none !important; }
@@ -432,17 +452,17 @@ h3 {
     *display: inline;
     width: 25px;
     height: 3px;
-    color: #E4002B;
+    color: #df0031;
     font: bold 14px/.4 Helvetica;
     text-transform: uppercase;
     text-indent: -55px;
-    background: #E4002B;
+    background: #df0031;
     transition: all .2s ease-out; }
     .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
       content: '';
       width: 25px;
       height: 3px;
-      background: #E4002B;
+      background: #df0031;
       position: absolute;
       left: 0;
       -webkit-transition: 0.2s;
@@ -523,7 +543,7 @@ h3 {
       display: block;
       width: 80px;
       height: 4px;
-      background: #E4002B;
+      background: #df0031;
       left: 50%;
       margin-left: -40px;
       bottom: 0; }
@@ -649,7 +669,7 @@ h3 {
       width: 20%; }
       #upbe-acompanhamento-personalizado .fh5co-service .fh5co-icon i {
         font-size: 40px;
-        color: #E4002B; }
+        color: #df0031; }
     #upbe-acompanhamento-personalizado .fh5co-service .fh5co-desc {
       width: 80%;
       float: right; }
@@ -707,7 +727,7 @@ h3 {
         width: 56px;
         height: 56px;
         margin-top: -30px;
-        background: #E4002B;
+        background: #df0031;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
@@ -789,7 +809,7 @@ h3 {
 
 
     #upbe-planos .price-box.popular {
-      border: 2px solid #E4002B; }
+      border: 2px solid #df0031; }
       #upbe-planos .price-box.popular .popular-text {
         top: 0;
         left: 50%;
@@ -797,7 +817,7 @@ h3 {
         margin-top: -2em;
         position: absolute;
         padding: 4px 20px;
-        background: #E4002B;
+        background: #df0031;
         color: #fff;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -810,7 +830,7 @@ h3 {
           left: 50%;
           margin-left: -10px;
           border-top: 10px solid black;
-          border-top-color: #E4002B;
+          border-top-color: #df0031;
           border-left: 10px solid transparent;
           border-right: 10px solid transparent; }
   #upbe-planos .pricing-plan {
@@ -897,10 +917,10 @@ h3 {
         text-decoration: none;
         border-bottom: none; }
       .social li a.social-box {
-        background: #E4002B;
+        background: #df0031;
         color: #fff; }
       .social li a.social-circle {
-        background: #E4002B;
+        background: #df0031;
         color: #fff;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -909,10 +929,10 @@ h3 {
       .social li a:hover {
         background: #393e46 !important; }
   .social.social-box a {
-    background: #E4002B;
+    background: #df0031;
     color: #fff; }
   .social.social-circle a {
-    background: #E4002B;
+    background: #df0031;
     color: #fff;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;

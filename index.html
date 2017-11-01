@@ -503,7 +503,7 @@
 							</div>
 						</div>
 						<div class="box-bt">
-						<a href="planos.html#remoto" class="btn btn-upbered btn-lg btn-block">SAIBA MAIS</a>
+						<a href="#" data-toggle="modal" data-target="#modalform" class="btn btn-upbered btn-lg btn-block">SAIBA MAIS</a>
 						</div>
 					</div>
 				</div>
@@ -539,7 +539,7 @@
 							<div class="col-md-10 col-sm-10"><p> aulas* com EDUCADOR FISICO compartilhado, que orientará na execução do seu treino individual (*limitada a 4 pessoas)</p></div>
 						</div>
 						<div class="box-bt">
-							<a href="planos.html#remoto" class="btn btn-upbered btn-lg btn-block">SAIBA MAIS</a>
+							<a href="#" data-toggle="modal" data-target="#modalform" class="btn btn-upbered btn-lg btn-block">SAIBA MAIS</a>
 						</div>
 					</div>
 				</div>
@@ -574,7 +574,7 @@
 							<div class="col-md-10 col-sm-10"><p> aulas com PERSONAL TRAINER em local e horário de sua preferência</p></div>
 						</div>
 						<div class="box-bt">
-							<a href="planos.html#remoto" class="btn btn-upbered btn-lg btn-block">SAIBA MAIS</a>
+							<a href="#" data-toggle="modal" data-target="#modalform" class="btn btn-upbered btn-lg btn-block">SAIBA MAIS</a>
 						</div>
 					</div>
 				</div>
@@ -582,6 +582,71 @@
 			</div>
 		</div>
 	</section>
+
+
+
+	<!-- Modal Formulário -->
+	<div class="modal fade" id="modalform" tabindex="-1" role="dialog" aria-labelledby="modalform">
+		<div class="modal-dialog modal-md" role="document">
+			<div class="modal-content fundomodal">
+				<div class="modal-header">
+					<button type="button" class="close branco" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<div id="tit-plano" class="centralizar"> <h3 class="branco">FAÇA SUA INSCRIÇÃO</h3></div>
+					
+				</div>
+				<div class="modal-body">
+					<form name="contato" method="post" action="form-tour.php" target="_parent">
+						<div class="row">
+							<div class="col-sm-12 col-md-6 col-lg-6 col-xs-12">
+								<div class="form-group">
+									<label for="nome">NOME*</label>
+									<input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-6 col-xs-12">
+								<div class="form-group">
+									<label for="seuemail">E-MAIL*</label>
+									<input type="email" class="form-control" id="seuemail" name="seuemail" placeholder="Digite seu e-mail" required>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="row">
+							<div class="col-sm-12 col-md-6 col-lg-6 col-xs-12">
+								<div class="form-group">
+									<label for="telcel">CELULAR*</label>
+									<input type="tel" class="form-control" id="telcel" name="telcel" placeholder="Celular" required>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-6 col-xs-12">
+								<div class="form-group">
+									<label for="telfixo">TELEFONE FIXO</label>
+									<input type="tel" class="form-control" id="telfixo" name="telfixo" placeholder="Telefone fixo">
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+								<div class="form-group">
+									<label for="tipoquarto">ESCOLHA SEU PLANO*</label>
+									<select id="tipoquarto" name="tipoquarto" class="form-control" required>
+										<option>Remoto</option>
+										<option>Presencial</option>
+										<option>Personal</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-default">Enviar</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<!--<section id="upbe-news" data-section="news" style="padding-top: 0em; padding-bottom: 3em;">
 

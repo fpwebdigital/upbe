@@ -33,12 +33,12 @@ body {
 }
 
 a {
-  color: #df0031;
+  color: #da291c;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   a:hover, a:active, a:focus {
-    color: #df0031;
+    color: #da291c;
     outline: none; }
 
 p {
@@ -105,11 +105,11 @@ h2 {
 
 
 #musica{
-  position: relative;
-  background-color: #7a43b6;
-  left: 0px;
+  position: fixed;
+  left: 20px;
   width: 100px;
   height: 83px;
+  bottom: 20px
 }
 
 .esp-rodape{
@@ -197,6 +197,21 @@ h2 {
   padding: 1px;
   margin-bottom: 10px;
 }
+#tit-hfb{
+  background-color: #da291c;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+
+}
+
+#content-hfb{
+  padding: 20px;
+  margin-top: 10px;
+  position: relative;
+
+}
+
 
 
 h3 {
@@ -226,10 +241,56 @@ h3 {
   -o-transition: 0.3s;
   transition: 0.3s; }
 
+.box-plano{
+  width: 100%;
+  min-height: 780px;
+  background-color: #ffffff;
+  position: relative;
+  border: 2px solid #ECEEF0
+}
+
+.box-hfb{
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  position: relative;
+  border: 2px solid #ECEEF0;
+  margin-bottom: 30px;
+}
+
+.box-texto-intro{
+  height: auto;
+  position: relative;
+  float: left;
+  min-height: 130px;
+}
+.box-content-intro{
+  width: 100%;
+  height: auto;
+  position: relative;
+  float: left;
+}
+
+.box-add-plano{
+  width: 100%;
+  height: auto;
+  position: relative;
+  float: left;
+  margin-top: 15px;
+}
+
+.box-bt{
+  width: 100%;
+  height: auto;
+  position:  absolute;
+  bottom:  0px;
+}
+
+
 .btn.btn-upbered {
-  background: #df0031;
+  background: #da291c;
   color: #ffffff;
-  border: 1px solid #df0031 !important;
+  border: 1px solid #da291c !important;
   border-radius: inherit;
 }
 
@@ -238,11 +299,12 @@ h3 {
 }
 
 .btn.btn-upbered2 {
-  background: #df0031;
+  background: #da291c;
   color: #ffffff;
-  border: 1px solid #df0031 !important;
-  border-radius: 0px;
-  width: inherit;100%
+  border: 1px solid #da291c !important;
+  border-radius: inherit;
+  position: absolute;
+  bottom: 0px;
 }
 
 .btn.btn-upbered2:hover, .btn.btn-upbered2:active, .btn.btn-upbered2:focus {
@@ -264,7 +326,7 @@ h3 {
     color: #7f7f7f;
     border: 1px solid #d9d9d9 !important; }
     .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
-      background: #df0031; }
+      background: #da291c; }
 
 
   .btn:hover, .btn:active, .btn:focus {
@@ -301,20 +363,20 @@ h3 {
       -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
       box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1); }
       #upbe-header .navbar-brand {
-        color: #df0031 !important; }
+        color: #da291c !important; }
       #upbe-header #navbar li a {
         color: rgba(0, 0, 0, 0.5) !important;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s; }
         #upbe-header #navbar li a:hover {
-          color: #df0031 !important; }
+          color: #da291c !important; }
         #upbe-header #navbar li a span:before {
           background: transparent !important; }
       #upbe-header #navbar li.active a {
         background: transparent;
         background: none;
-        color: #df0031 !important; }
+        color: #da291c !important; }
         #upbe-header #navbar li.active a span:before {
           visibility: visible;
           -webkit-transform: scaleX(1);
@@ -342,7 +404,7 @@ h3 {
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #df0031;
+        background-color: #da291c;
         visibility: hidden;
         -webkit-transform: scaleX(0);
         -moz-transform: scaleX(0);
@@ -388,18 +450,18 @@ h3 {
     margin-top: 0px;
     top: 0; }
     #upbe-header.navbar-fixed-top .navbar-brand {
-      color: #df0031; }
+      color: #da291c; }
     #upbe-header.navbar-fixed-top #navbar li a {
       color: rgba(0, 0, 0, 0.7);
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s; }
       #upbe-header.navbar-fixed-top #navbar li a:hover {
-        color: #df0031; }
+        color: #da291c; }
     #upbe-header.navbar-fixed-top #navbar li.active a {
       background: transparent;
       background: none;
-      color: #df0031; }
+      color: #da291c; }
       #upbe-header.navbar-fixed-top #navbar li.active a span:before {
         visibility: visible;
         -webkit-transform: scaleX(1);
@@ -422,7 +484,7 @@ h3 {
       letter-spacing: 2px;
       color: #adadad; }
       #upbe-header .navbar-default .brand-slogan em {
-        color: #df0031;
+        color: #da291c;
         font-style: normal; }
   #upbe-header a {
     -webkit-transition: 0s;
@@ -440,7 +502,7 @@ h3 {
   cursor: pointer;
   text-decoration: none; }
   .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
-    background: #df0031; }
+    background: #da291c; }
   .fh5co-nav-toggle:hover, .fh5co-nav-toggle:focus, .fh5co-nav-toggle:active {
     outline: none;
     border-bottom: none !important; }
@@ -452,17 +514,17 @@ h3 {
     *display: inline;
     width: 25px;
     height: 3px;
-    color: #df0031;
+    color: #da291c;
     font: bold 14px/.4 Helvetica;
     text-transform: uppercase;
     text-indent: -55px;
-    background: #df0031;
+    background: #da291c;
     transition: all .2s ease-out; }
     .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
       content: '';
       width: 25px;
       height: 3px;
-      background: #df0031;
+      background: #da291c;
       position: absolute;
       left: 0;
       -webkit-transition: 0.2s;
@@ -543,7 +605,7 @@ h3 {
       display: block;
       width: 80px;
       height: 4px;
-      background: #df0031;
+      background: #da291c;
       left: 50%;
       margin-left: -40px;
       bottom: 0; }
@@ -669,7 +731,7 @@ h3 {
       width: 20%; }
       #upbe-acompanhamento-personalizado .fh5co-service .fh5co-icon i {
         font-size: 40px;
-        color: #df0031; }
+        color: #da291c; }
     #upbe-acompanhamento-personalizado .fh5co-service .fh5co-desc {
       width: 80%;
       float: right; }
@@ -727,7 +789,7 @@ h3 {
         width: 56px;
         height: 56px;
         margin-top: -30px;
-        background: #df0031;
+        background: #da291c;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
@@ -809,7 +871,7 @@ h3 {
 
 
     #upbe-planos .price-box.popular {
-      border: 2px solid #df0031; }
+      border: 2px solid #da291c; }
       #upbe-planos .price-box.popular .popular-text {
         top: 0;
         left: 50%;
@@ -817,7 +879,7 @@ h3 {
         margin-top: -2em;
         position: absolute;
         padding: 4px 20px;
-        background: #df0031;
+        background: #da291c;
         color: #fff;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -830,7 +892,7 @@ h3 {
           left: 50%;
           margin-left: -10px;
           border-top: 10px solid black;
-          border-top-color: #df0031;
+          border-top-color: #da291c;
           border-left: 10px solid transparent;
           border-right: 10px solid transparent; }
   #upbe-planos .pricing-plan {
@@ -917,10 +979,10 @@ h3 {
         text-decoration: none;
         border-bottom: none; }
       .social li a.social-box {
-        background: #df0031;
+        background: #da291c;
         color: #fff; }
       .social li a.social-circle {
-        background: #df0031;
+        background: #da291c;
         color: #fff;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -929,10 +991,10 @@ h3 {
       .social li a:hover {
         background: #393e46 !important; }
   .social.social-box a {
-    background: #df0031;
+    background: #da291c;
     color: #fff; }
   .social.social-circle a {
-    background: #df0031;
+    background: #da291c;
     color: #fff;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1303,7 +1365,7 @@ h3 {
     #fh5co-our-services .box .icon.colored-3 {
       background: #f26522; }
     #fh5co-our-services .box .icon.colored-4 {
-      background: #e52b50; }
+      background: #da291c; }
     #fh5co-our-services .box .icon.colored-5 {
       background: #2fc5cc; }
     #fh5co-our-services .box .icon.colored-6 {

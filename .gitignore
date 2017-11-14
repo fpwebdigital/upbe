@@ -25,6 +25,12 @@ bower_components
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 
+# Arquivos:
+envia-contato.php
+envia-planos.php
+
+.idea/inspectionProfiles
+
 # Gradle:
 .idea/**/gradle.xml
 .idea/**/libraries
@@ -71,5 +77,6 @@ fabric.properties
 
 # Sonarlint plugin
 .idea/sonarlint
+
 
 # End of https://www.gitignore.io/api/bower,phpstorm

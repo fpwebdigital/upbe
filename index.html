@@ -235,20 +235,27 @@
 	<div id="tarja-news">
 	<section>
 		<div class="container">
+			<form name="contato" method="post" action="envia-dicas.php" target="_parent">
 			<div class="row">
+
 				<div class="col-md-12">
 					<h4 class="vermelho centralizar">QUER RECEBER DICAS EXCLUSIVAS? <span class="preto">Cadastre seu email!</span> </h4>
 				</div>
 					<div class="col-md-6 col-sm-6">
-					<input type="text" class="form-control" id="" placeholder="Nome" style="border-radius: 0px">
+
+					<input type="text" class="form-control" id="nome-dicas" name="nome-dicas" placeholder="Nome" style="border-radius: 0px">
 				</div>
 				<div class="col-md-6 col-sm-6">
-					<input type="email" class="form-control" id="" placeholder="Email" style="border-radius: 0px">
+					<input type="email" class="form-control" id="email-dicas" name="email-dicas" placeholder="Email" style="border-radius: 0px">
 				</div>
 				<div class="col-md-12">
 					<br>
-					<button type="button" class="btn btn-primary">ENVIAR</button>
+
 				</div>
+
+					<button type="submit" class="btn btn-default">Enviar</button>
+				</form>
+
 			</div>
 		</div>
 	</section>

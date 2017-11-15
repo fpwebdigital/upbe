@@ -292,6 +292,7 @@ h3 {
   color: #ffffff;
   border: 1px solid #da291c !important;
   border-radius: inherit;
+  margin-bottom: 15px;
 }
 
 .btn.btn-upbered:hover, .btn.btn-upbered:active, .btn.btn-upbered:focus {
@@ -314,7 +315,11 @@ h3 {
 .btn.btn-upbeblack {
   background: #000000;
   color: #ffffff;
+  border-radius: inherit;
   border: 1px solid #000000 !important;
+}
+.form-control {
+  margin-bottom: 20px;
 }
 
 .btn.btn-upbeblack:hover, .btn.btn-upbeblack:active, .btn.btn-upbeblack:focus {
@@ -574,9 +579,19 @@ h3 {
   height: 44px;
   width: 44px;
   border-bottom: none !important; }
+
+
+
   @media screen and (max-width: 768px) {
+
+    .owl-carousel-fullwidth .item .overlay {
+      height: 270px;
+    }
+
+
     .fh5co-nav-toggle {
-      display: block; } }
+      display: block; }
+  }
 
 /* =======================================================
 * 	
@@ -618,8 +633,8 @@ h3 {
     color: #262626; }
     @media screen and (max-width: 768px) {
       .section-heading h3 {
-        font-size: 22px !important;
-        line-height: 34px; } }
+        font-size: 15px !important;
+        line-height: 23px; } }
 
 /* =======================================================
 * 	
@@ -1132,10 +1147,39 @@ h3 {
   height: 100vh;
   display: table;
   width: 100%; }
+
+/* =======================================================
+*	Parâmetros Mobile - FPweb
+* ======================================================= */
   @media screen and (max-width: 768px) {
     .owl-carousel-fullwidth .item, .owl-carousel-fullwidth .fh5co-owl-text-wrap {
       height: 80vh;
-      padding: 5em 0; } }
+      padding: 3em 0; }
+
+    .owl-carousel-internal {
+      height: 37vh !important;
+    }
+    .esp-valores{
+      padding: 0px 30px 0px 30px;
+    }
+    .esp-footer {
+      margin-top: 166px;
+    }
+
+    .section-heading {
+      padding-bottom: 7px;
+      margin-top: 21px;
+    }
+
+    #upbe-planos {
+      padding: 0em;
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 16px !important;
+    }
+
+  }
 .owl-carousel-fullwidth .fh5co-owl-text-wrap {
   position: relative; }
 .owl-carousel-fullwidth .item {
@@ -1233,7 +1277,7 @@ h3 {
   padding-bottom: 3em; }
   @media screen and (max-width: 768px) {
     .row-bottom-padded-lg {
-      padding-bottom: 2em; } }
+      padding-bottom: 0em; } }
 
 .row-bottom-padded-md {
   padding-bottom: 4em; }

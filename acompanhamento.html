@@ -184,7 +184,7 @@
 					<audio id="yourAudio" preload='none'>
 						<source src="./music/upbe.mp3" type='audio/mpeg' />
 					</audio>
-					<a href="#" id="audioControl"><img src="images/som-off.jpg" class="img-responsive"></a>
+					<a href="#" id="audioControl"><img src="images/player-off.png" class="img-responsive"></a>
 				</div>
 
 				<div class="col-md-12 text-center">
@@ -193,6 +193,7 @@
                         <li><a href="https://www.facebook.com/upbe.br/" target="_blank"><i class="icon-facebook"></i></a></li>
                         <li><a href="https://www.instagram.com/upbeme/" target="_blank"><i class="icon-instagram"></i></a></li>
                         <li><a href="https://twitter.com/upbeme" target="_blank"><i class="icon-twitter"></i></a></li>
+						<li><a href="http://trainingymapp.com/webtouch/" target="_blank"><i class="icon-lock"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -207,8 +208,8 @@
         ctrl.onclick = function () {
 
             // Update the Button
-            var pause = ctrl.innerHTML === '<img src="images/som-on.jpg" class="img-responsive">';
-            ctrl.innerHTML = pause ? '<img src="images/som-off.jpg" class="img-responsive">' : '<img src="images/som-on.jpg" class="img-responsive">';
+            var pause = ctrl.innerHTML === '<img src="images/player-on.png" class="img-responsive">';
+            ctrl.innerHTML = pause ? '<img src="images/player-off.png" class="img-responsive">' : '<img src="images/player-on.png" class="img-responsive">';
 
             // Update the Audio
             var method = pause ? 'pause' : 'play';

@@ -135,12 +135,12 @@ h2 {
 }
 
 .verde{
-  color: #95b566;
+  color: #6BA539;
   font-weight: bold;
 }
 
 #tarja-vert-verde{
-  background-color: #95b566;
+  background-color: #6BA539;
   width: 13px;
   height: 300px;
   position: relative;
@@ -149,7 +149,7 @@ h2 {
 }
 
 #tarja-vert-rosa{
-  background-color: #e6277b;
+  background-color: #B0008E ;
   width: 13px;
   height: 378px;
   position: relative;
@@ -158,7 +158,7 @@ h2 {
 }
 
 #tarja-vert-azul{
-  background-color: #312b95;
+  background-color: #0057BB ;
   width: 13px;
   height: 405px;
   position: relative;
@@ -167,7 +167,7 @@ h2 {
 }
 
 .rosa{
-  color: #e6277b;
+  color: #B0008E ;
   font-weight: bold;
 }
 
@@ -176,7 +176,7 @@ h2 {
 }
 
 .azul{
-  color: #312b95;
+  color: #0057BB ;
   font-weight: bold;
 }
 .branco{

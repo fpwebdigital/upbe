@@ -36,10 +36,15 @@ a {
   color: #da291c;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
-  transition: 0.5s; }
+  transition: 0.5s;
+  text-decoration: none;
+}
+
   a:hover, a:active, a:focus {
     color: #da291c;
-    outline: none; }
+    outline: none;
+    text-decoration: none;
+  }
 
 p {
   margin-bottom: 0.5em; }
@@ -246,7 +251,8 @@ h3 {
   min-height: 780px;
   background-color: #ffffff;
   position: relative;
-  border: 2px solid #ECEEF0
+  border: 2px solid #ECEEF0;
+  margin-bottom: 20px;
 }
 
 .box-hfb{
@@ -585,7 +591,7 @@ h3 {
   @media screen and (max-width: 768px) {
 
     .owl-carousel-fullwidth .item .overlay {
-      height: 270px;
+      height: auto;
     }
 
 
@@ -1166,6 +1172,10 @@ h3 {
       margin-top: 166px;
     }
 
+    .alg-button{
+      text-align: center;
+    }
+
     .section-heading {
       padding-bottom: 7px;
       margin-top: 21px;
@@ -1177,6 +1187,16 @@ h3 {
     }
     h3 {
       font-size: 16px !important;
+    }
+
+    #upbe-contato {
+    padding-top: 0px;
+     }
+
+    .txt-end {
+      font-size: 12px;
+      margin-left: 10px;
+      margin-top: 10px;
     }
 
   }
@@ -1244,8 +1264,14 @@ h3 {
       @media screen and (max-width: 768px) {
         .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-lead {
           margin-bottom: 20px;
-          font-size: 30px;
-          line-height: 30px; } }
+          font-size: 24px;
+          line-height: 30px; }
+        #musica {
+          display: none;
+        }
+
+
+      }
     .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-sub-lead {
       font-size: 30px;
       line-height: 30px;

@@ -10,8 +10,29 @@
 
 }
 
+#bg-form-leads{
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin-top: 20px;
+}
+
 #respond textarea {
     border: solid 1px #cccccc;
+}
+
+.txt1-dicas-blog {
+    color: #da291c;
+    font-weight: bold;
+}
+
+.txt2-dicas-blog {
+    color: #000000;
+    font-weight: bold;
+}
+
+input.wpcf7-form-control.wpcf7-date, input.wpcf7-form-control.wpcf7-number, input.wpcf7-form-control.wpcf7-quiz, input.wpcf7-form-control.wpcf7-text, select.wpcf7-form-control.wpcf7-select, textarea.wpcf7-form-control.wpcf7-textarea {
+    border: solid 1px #cccccc;
+    margin-bottom: 15px;
 }
 
 aside .widget.posts_holder li {

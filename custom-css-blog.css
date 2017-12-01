@@ -5,6 +5,11 @@
     display: none;
 }
 
+.qode-ni-content {
+    margin-top: 20px;
+
+}
+
 #respond textarea {
     border: solid 1px #cccccc;
 }

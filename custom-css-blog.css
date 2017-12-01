@@ -1,0 +1,132 @@
+#respond input[type=text], #respond input[type=email], #respond textarea, .contact_form input[type=text], .contact_form textarea {
+    border: solid 1px #cccccc;
+}
+.qode-layout1-item .qode-post-info-category {
+    display: none;
+}
+
+#respond textarea {
+    border: solid 1px #cccccc;
+}
+
+aside .widget.posts_holder li {
+    margin: 30px 0px 0px 0px;
+}
+
+.blog_holder article .post_more {
+    margin: 10px 0px 0px 0px;
+    text-align: right;
+}
+
+.sidebar {
+    margin-top: 60px
+}
+
+.header_top #searchform input[type=text], .widget.widget_search form input[type=text] {
+    border: 1px solid;
+}
+
+.q_progress_bar .progress_title_holder {
+    margin: 0 0 3px;
+}
+
+.q_font_awsome_icon_square:hover {
+    border-color: #e05038 !important;
+}
+
+header nav.main_menu>ul>li>a>span:not(.plus) {
+    position: relative;
+}
+.carousel-inner h2 span span {
+    color:#e05038;
+}
+.carousel-inner .slider_content .slide_anchor_holder .slide_anchor_button {
+    font-size: 35px;
+    color: #fff;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border-radius: 65px;
+    background-color: #e05038;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 1550px) {
+    h1 {
+        font-size: 118px;
+        line-height: 122px;
+        letter-spacing: 17px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 50px;
+        line-height: 55px;
+        letter-spacing: 11px;
+    }
+    .title.title_size_small h1, .blog_holder.blog_large_image h2 a {
+        font-size: 39px;
+        line-height: 45px;
+        letter-spacing: 4px;
+    }
+}
+
+.wpcf7 form.wpcf7-form p {
+    margin-bottom: -1px;
+}
+
+div.wpcf7 img.ajax-loader {
+    display: block;
+    margin: 0 auto;
+}
+
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit:not([disabled]) {
+    margin-top: 26px;
+}
+
+.portfolio_single h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.portfolio_detail.portfolio_single_follow h6 {
+    line-height: 32px;
+}
+
+.portfolio_single .portfolio_container {
+    margin-top: 33px;
+}
+
+.side_menu .widget {
+    margin: 0 0 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.gallery_holder ul li .gallery_hover i {
+    font-size: 18px;
+}
+
+section.parallax_section_holder.qode_vertical_middle_align {
+    table-layout: fixed;
+}
+.separator.small {
+    max-width: 100%;
+}
+
+a.side_menu_button_link {
+    border: 1px solid #d3d3d3;
+    border-radius: 100%;
+    padding: 0 !important;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 32px;
+}

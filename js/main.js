@@ -59,8 +59,7 @@
 
         owlcalendario.owlCarousel({
             items: 3,
-            // loop: true,
-            loop:($(".owl-carousel-calendario").length > 1) ? true: false,
+            loop: true,
             margin: 0,
             responsiveClass: true,
             nav: true,
@@ -79,8 +78,7 @@
 
         owlapp.owlCarousel({
             items: 1,
-            // loop: true,
-            loop:($(".owl-carousel-app").length > 1) ? true: false,
+            loop: true,
             margin: 0,
             responsiveClass: true,
             nav: true,

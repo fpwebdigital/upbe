@@ -251,27 +251,7 @@
 		</div>
 	</footer>
 
-	<script>
 
-        var yourAudio = document.getElementById('yourAudio'),
-            ctrl = document.getElementById('audioControl');
-
-        ctrl.onclick = function () {
-
-            // Update the Button
-            var pause = ctrl.innerHTML === '<img src="images/player-on.png" class="img-responsive">';
-            ctrl.innerHTML = pause ? '<img src="images/player-off.png" class="img-responsive">' : '<img src="images/player-on.png" class="img-responsive">';
-
-            // Update the Audio
-            var method = pause ? 'pause' : 'play';
-            yourAudio[method]();
-
-            // Prevent Default Action
-            return false;
-        };
-
-	</script>
-	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->

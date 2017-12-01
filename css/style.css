@@ -1165,6 +1165,23 @@ h3 {
     .owl-carousel-internal {
       height: 37vh !important;
     }
+
+    #tarja-vert-rosa{
+      height: 845px;
+    }
+
+    #tarja-vert-azul{
+      height: 1125px;
+    }
+
+    #tarja-vert-verde{
+      height: 863px;
+    }
+
+    .btn-lg, .btn-group-lg > .btn {
+      font-size: 15px;
+    }
+
     .esp-valores{
       padding: 0px 30px 0px 30px;
     }

@@ -39,7 +39,7 @@ $aria_req = ( $req ? " aria-required='true'" : '' );
 $args = array(
 	'id_form' => 'commentform',
 	'id_submit' => 'submit_comment',
-	'title_reply'=>'<h5>'. __( 'Publicar um comentário','qode' ) .'</h5>',
+	'title_reply'=>'<h5>'. __( 'Comente','qode' ) .'</h5>',
 	'title_reply_to' => __( 'Publicar uma resposta para %s','qode' ),
 	'cancel_reply_link' => __( 'Cancelar resposta','qode' ),
 	'label_submit' => __( 'Enviar','qode' ),

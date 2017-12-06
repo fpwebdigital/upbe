@@ -246,6 +246,7 @@ $_post_format = get_post_format();
 						<h2 itemprop="name" class="entry_title"><?php the_title(); ?></h2>
 
                         <div class="post_info">
+                            <?php _e('Categoria: ','qode'); ?> <?php the_category(', '); ?><br>
                            <span class="post_author">
                                 <i class="qode_icon_font_awesome fa fa-user" style="font-size: 23px;color: #da291c;"></i> <span class="autor-n"><?php _e('','qode'); ?></span>
 								<a itemprop="author" class="post_author_link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author_meta('display_name'); ?></a>

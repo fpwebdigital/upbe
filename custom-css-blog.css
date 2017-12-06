@@ -2,12 +2,16 @@
     border: solid 1px #cccccc;
 }
 .qode-layout1-item .qode-post-info-category {
-    display: none;
+
 }
 
 .qode-ni-content {
     margin-top: 20px;
 
+}
+
+h4, .h4, h4 a {
+    font-size: 17px;
 }
 
 #bg-form-leads{
@@ -30,13 +34,16 @@
     font-weight: bold;
 }
 
+
+
+
 input.wpcf7-form-control.wpcf7-date, input.wpcf7-form-control.wpcf7-number, input.wpcf7-form-control.wpcf7-quiz, input.wpcf7-form-control.wpcf7-text, select.wpcf7-form-control.wpcf7-select, textarea.wpcf7-form-control.wpcf7-textarea {
     border: solid 1px #cccccc;
     margin-bottom: 15px;
 }
 
 aside .widget.posts_holder li {
-    margin: 30px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 .blog_holder article .post_more {

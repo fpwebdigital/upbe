@@ -39,7 +39,7 @@ $aria_req = ( $req ? " aria-required='true'" : '' );
 $args = array(
 	'id_form' => 'commentform',
 	'id_submit' => 'submit_comment',
-	'title_reply'=>'<h5>'. __( 'Publicar um comentário','qode' ) .'</h5>',
+	'title_reply'=>'<h5>'. __( 'Comente','qode' ) .'</h5>',
 	'title_reply_to' => __( 'Publicar uma resposta para %s','qode' ),
 	'cancel_reply_link' => __( 'Cancelar resposta','qode' ),
 	'label_submit' => __( 'Enviar','qode' ),
@@ -49,7 +49,6 @@ $args = array(
 	'fields' => apply_filters( 'comment_form_default_fields', array(
 		'author' => '<div class="three_columns clearfix"><div class="column1"><div class="column_inner"><input id="author" name="author" placeholder="'. __( 'Seu nome','qode' ) .'" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '"' . $aria_req . ' /></div></div>',
 		'email' => '<div class="column2"><div class="column_inner"><input id="email" name="email" placeholder="'. __( 'E-mail','qode' ) .'" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '"' . $aria_req . ' /></div></div>',
-		'url' => '<div class="column3"><div class="column_inner"><input id="url" name="url" type="text" placeholder="'. __( 'Website','qode' ) .'" value="' . esc_attr( $commenter['comment_author_url'] ) . '" /></div></div></div>'
 		 ) ) );
  ?>
  <div class="comment_pager">

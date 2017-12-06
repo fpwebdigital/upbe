@@ -1186,9 +1186,34 @@ h3 {
       color: #fff;
     }
 
+    #tarja-vert-rosa{
+      height: 845px;
+    }
 
+    #tarja-vert-azul{
+      height: 850px;
+    }
 
+    #tarja-vert-verde{
+      height: 863px;
+    }
 
+    .btn-lg, .btn-group-lg > .btn {
+      font-size: 15px;
+      margin-top: 20px;
+    }
+
+    #tarja-vert-rosa{
+      height: 653px;
+    }
+
+    #tarja-vert-azul{
+      height: 1125px;
+    }
+
+    #tarja-vert-verde{
+      height: 654px;
+    }
 
     .esp-valores{
       padding: 0px 30px 0px 30px;
@@ -1225,6 +1250,67 @@ h3 {
     }
 
   }
+
+/* =======================================================
+*	Parâmetros Mobile iPhone6 - FPweb
+* ======================================================= */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+
+
+  #tarja-vert-rosa{
+    height: 702px;
+  }
+
+  #tarja-vert-azul{
+    height: 870px;
+  }
+
+  #tarja-vert-verde{
+    height: 679px;
+  }
+
+  .btn-lg, .btn-group-lg > .btn {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+
+}
+
+
+/* =======================================================
+*	Parâmetros Mobile iPhone6plus - FPweb
+* ======================================================= */
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+
+
+  #tarja-vert-rosa{
+    height: 654px;
+  }
+
+  #tarja-vert-azul{
+    height: 850px;
+  }
+
+  #tarja-vert-verde{
+    height: 653px;
+  }
+
+
+
+  .btn-lg, .btn-group-lg > .btn {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+}
+
+
+
 .owl-carousel-fullwidth .fh5co-owl-text-wrap {
   position: relative; }
 .owl-carousel-fullwidth .item {

@@ -18,17 +18,17 @@ $phpmailer->CharSet  = "UTF-8";
 
 
 $mail->IsSMTP(); // Define que a mensagem será SMTP
-$mail->Host = "smtp.upbe.me"; // Endereço do servidor SMTP
+$mail->Host = "smtp.gmail.com"; // Endereço do servidor SMTP
 $mail->SMTPAuth = true; // Autenticação
-$mail->Username = 'naoresponder@upbe.me'; // Usuário do servidor SMTP
-$mail->Password = 'contato$7987567'; // Senha da caixa postal utilizada
+$mail->Username = 'contato@upbe.me'; // Usuário do servidor SMTP
+$mail->Password = 'Upbe2017!'; // Senha da caixa postal utilizada
 
 
 
 // Define o remetente
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$mail->From = "naoresponder@upbe.me"; // Seu e-mail
-$mail->Sender = "naoresponder@upbe.me"; // Seu e-mail
+$mail->From = "contato@upbe.me"; // Seu e-mail
+$mail->Sender = "contato@upbe.me"; // Seu e-mail
 $mail->FromName = "Formulário de Orçamento"; // Seu nome
 
 // Define os destinatário(s)

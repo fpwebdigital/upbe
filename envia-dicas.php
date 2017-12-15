@@ -8,25 +8,31 @@ $nome = $_POST['nome-dicas'];
 $email = $_POST['email-dicas'];
 
 
+// Desabilita mensagem de warning
+ini_set( 'display_errors','0');
 
 // Inicia a classe PHPMailer
 $mail = new PHPMailer();
 $mail->CharSet  = "UTF-8";
-$phpmailer->CharSet  = "UTF-8";
+//$phpmailer->CharSet  = "UTF-8";
 
 
 $mail->IsSMTP(); // Define que a mensagem será SMTP
-$mail->Host = "smtp.gmail.com"; // Endereço do servidor SMTP
-$mail->SMTPAuth = true; // Autenticação
-$mail->Username = 'contato@upbe.me'; // Usuário do servidor SMTP
+
+$mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+$mail->SMTPAuth = true; // authentication enabled
+$mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
+$mail->Host = "smtp.gmail.com";
+$mail->Port = 587; // or 587
+$mail->Username = 'atendimento@upbe.me'; // Usuário do servidor SMTP
 $mail->Password = 'Upbe2017!'; // Senha da caixa postal utilizada
 
 
 
 // Define o remetente
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$mail->From = "contato@upbe.me"; // Seu e-mail
-$mail->Sender = "contato@upbe.me"; // Seu e-mail
+$mail->From = "atendimento@upbe.me"; // Seu e-mail
+$mail->Sender = "atendimento@upbe.me"; // Seu e-mail
 $mail->FromName = "Formulário Quero Receber Dicas"; // Seu nome
 
 // Define os destinatário(s)
@@ -34,6 +40,9 @@ $mail->FromName = "Formulário Quero Receber Dicas"; // Seu nome
 $mail->AddAddress('contato@upbe.me');
 //$mail->AddCC('ciclano@site.net', 'Ciclano'); // Copia
 //$mail->AddBCC('fulano@dominio.com.br', 'Fulano da Silva'); // Cópia Oculta
+
+$mail->SMTPDebug = false;
+$mail->do_debug = 0;
 
 // Define os dados técnicos da Mensagem
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -63,13 +72,12 @@ $enviado = $mail->Send();
 $mail->ClearAllRecipients();
 $mail->ClearAttachments();
 
+
 // Exibe uma mensagem de resultado
 if ($enviado) {
     echo "<script>alert('Mensagem Enviada com Sucesso'); location.href='index.html';</script>";
 } else {
-    echo "<script>alert('Erro ao enviar a mensagem'); location.href='index.html';</script>";
-    echo "Informações do erro: 
-" . $mail->ErrorInfo;
+    echo "<script>alert('Erro ao enviar a mensagem'); </script>";
 }
 
 ?>

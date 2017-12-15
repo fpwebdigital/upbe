@@ -10,25 +10,31 @@ $telefone = $_POST['telefone'];
 $assunto = $_POST['assunto'];
 $msg = $_POST['msg'];
 
+// Desabilita mensagem de warning
+ini_set( 'display_errors','0');
 
 // Inicia a classe PHPMailer
 $mail = new PHPMailer();
 $mail->CharSet  = "UTF-8";
-$phpmailer->CharSet  = "UTF-8";
+//$phpmailer->CharSet  = "UTF-8";
 
 
 $mail->IsSMTP(); // Define que a mensagem será SMTP
-$mail->Host = "smtp.gmail.com"; // Endereço do servidor SMTP
-$mail->SMTPAuth = true; // Autenticação
-$mail->Username = 'contato@upbe.me'; // Usuário do servidor SMTP
+
+$mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+$mail->SMTPAuth = true; // authentication enabled
+$mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
+$mail->Host = "smtp.gmail.com";
+$mail->Port = 587; // or 587
+$mail->Username = 'atendimento@upbe.me'; // Usuário do servidor SMTP
 $mail->Password = 'Upbe2017!'; // Senha da caixa postal utilizada
 
 
 
 // Define o remetente
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$mail->From = "contato@upbe.me"; // Seu e-mail
-$mail->Sender = "contato@upbe.me"; // Seu e-mail
+$mail->From = "atendimento@upbe.me"; // Seu e-mail
+$mail->Sender = "atendimento@upbe.me"; // Seu e-mail
 $mail->FromName = "Formulário de Orçamento"; // Seu nome
 
 // Define os destinatário(s)
